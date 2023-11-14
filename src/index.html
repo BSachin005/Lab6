@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Holy Grail Layout Example</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <header class="header">
+        <h1>Holy Grail Layout with JavaScript</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main">
+	<h1>Factorial Calculator</h1>
+        <div id="output" class="result"></div>
+        <div class="input-container">
+            <input type="number" id="numberInput" placeholder="Enter a number">
+            <button id="calculate">Calculate Factorial</button>
+        </div>
+    </main>
+    <section class="advertisement">
+        <a href="https://www.amazon.com" target="_blank">
+            <img src="factorial.png" alt="Advertisement">
+        </a>
+    </section>
+    <footer class="footer">
+        Addendum: This webpage utilizes CSS grid and JavaScript to create a responsive layout with a header, sidebar, main content, advertisement, and footer. The main content features a factorial calculator that takes user input, validates it is a non-negative number, calculates the factorial using a for loop in JavaScript, and displays the result by manipulating the DOM. The calculation is triggered by a click handler on the Calculate button. The advertisement section shows a mock product image linked to Amazon. Overall, the page demonstrates responsive design, input handling, validation, calculations, DOM manipulation, and flow between HTML, CSS and JavaScript.
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
